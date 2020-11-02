@@ -1,0 +1,30 @@
+﻿<Window x:Class="zadanWPF.tableAllBilling"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zadanWPF"
+        mc:Ignorable="d"
+        Title="tableAllBilling" Height="450" Width="800"
+        Background="PaleTurquoise"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"
+                   Text="Таблица всех счетов"
+                   FontSize="40"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+        <DataGrid Name="myDataGrid" 
+                  Grid.Row="1"
+                  IsSynchronizedWithCurrentItem="True"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Stretch"
+                  Margin="0,10,0,0"/>
+    </Grid>
+</Window>
